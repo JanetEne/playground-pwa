@@ -81,7 +81,10 @@ export default function Home() {
         <div className="flex gap-2 mt-10 flex-wrap">
           {postForm.length > 0 ? (
             postForm.map((item, index) => (
-              <div className="border p-2 shadow rounded-md border-gray-200 relative">
+              <div
+                className="border p-2 shadow rounded-md border-gray-200 relative"
+                key={index}
+              >
                 <p>{item.title}</p>
                 <p>{item.description}</p>
 
@@ -89,7 +92,7 @@ export default function Home() {
                   className="absolute top-0 right-1 cursor-pointer text-red-500"
                   onClick={() =>
                     setPostForm(
-                      postForm?.filter((item, itemIndex) => index !== itemIndex)
+                      postForm?.filter((_, itemIndex) => index !== itemIndex)
                     )
                   }
                 >
