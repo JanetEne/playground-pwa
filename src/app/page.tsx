@@ -78,11 +78,11 @@ export default function Home() {
           </div>
         </form>
 
-        <div className="flex gap-2 mt-10 flex-wrap">
+        <div className="grid grid-cols-4 gap-2 mt-10 flex-wrap">
           {postForm.length > 0 ? (
             postForm.map((item, index) => (
               <div
-                className="border p-2 shadow rounded-md border-gray-200 relative"
+                className="border w-[100px] p-2 shadow rounded-md border-gray-200 relative"
                 key={index}
               >
                 <p>{item.title}</p>
