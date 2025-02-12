@@ -56,9 +56,9 @@ export default function Home() {
             />
           </div>
           <div>
-            <p>Description</p>
+            <p>Content</p>
             <textarea
-              placeholder="Enter description"
+              placeholder="Enter content"
               className="w-full px-4 py-2 rounded-md"
               value={formValues?.description}
               onChange={(e) =>
