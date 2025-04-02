@@ -12,10 +12,12 @@
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-markdown": "^10.0.0"
+    "react-markdown": "^10.0.0",
+    "serwist": "^9.0.12"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@serwist/next": "^9.0.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
